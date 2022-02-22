@@ -25,11 +25,11 @@ volumes:
 
 properties:
     DATABASE_HOST: postgres13-master-13-x
-    DATABASE_USER: springbootweb
+    DATABASE_USER: postgres
     DATABASE_PORT: 5432
     DATABASE_NAME: springbootweb
     DATABASE_PASSWORD: 
-       VAULT: POSTGRESQL_SPRINGBOOT_PASSWORD
+       VAULT: POSTGRESQL_PASSWORD
     PGBENCH_SCALE: 5
     PGBENCH_CLIENTS: 5
     PGBENCH_RATE: 10
