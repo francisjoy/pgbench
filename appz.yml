@@ -1,7 +1,7 @@
 app:
     name: PGBENCH
     code: pgbench
-    notify: appz@ecloudcontrol.com
+    notify: fjoy@ecloudcontrol.com
 
 build:
     version: 0.1
@@ -11,7 +11,7 @@ build:
     image_template: pgbench-10.0
 
 deploy:
-    context: alpha/DEV
+    context: francisjoy/DEV
     type: statefulset
     replicas: 1
     port:
@@ -23,8 +23,8 @@ volumes:
     size: 10Gi
 
 properties:
-    DATABASE_HOST: postgres-master-12-2
-    DATABASE_USER: postgres
+    DATABASE_HOST: postgres-master-13-x
+    DATABASE_USER: springbootweb
     DATABASE_PORT: 5432
     DATABASE_NAME: springbootweb
     DATABASE_PASSWORD: 
